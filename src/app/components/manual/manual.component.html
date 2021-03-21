@@ -1,0 +1,55 @@
+<h1 [ngStyle]="{'font-size': '25px'}" >Manual de uso de “HUNT THE WUMPUS”: </h1>
+
+
+<div [ngStyle]="{'margin': '10px'}">
+  Tamaño de la letra:
+  <button type="button" class="btn btn-primary"  (click)="tamano = tamano + 2">
+    <i class="fa fa-plus"></i>
+  </button>
+
+  <button type="button" class="btn btn-primary"  (click)="tamano = tamano - 2">
+    <i class="fa fa-minus"></i>
+  </button>
+</div>
+
+<p [ngStyle]="{'font-size': '20px'}" ><strong>Resumen</strong></p>
+
+<p [style.fontSize.px]="[ tamano ]">El personaje principal es un cazador que busca un lingote de oro en un tablero de 4x4 celdas. El cazador puede encontrar peligros en su camino: pozos sin fondo donde si cae muere y el Wumpus, un monstruo que mata al cazador cuando coinciden en la misma celda del tablero. </p>
+
+<p [ngStyle]="{'font-size': '20px'}" ><strong>Objetivo</strong></p>
+
+
+<p [style.fontSize.px]="[ tamano ]">Encontrar el oro y volver a la casilla de salida lo más rápidamente posible ( vivo, claro¡¡)</p>
+
+<p [style.fontSize.px]="[ tamano ]">El cazador muere si entra en un pozo u ocupa una casilla en la que el Wumpus está vivo.</p>
+
+
+<p [ngStyle]="{'font-size': '20px'}" ><strong>Especificaciones de acciones</strong></p>
+
+<p [style.fontSize.px]="[ tamano ]">Siguiendo los iconos, se permite dar órdenes al cazador, y se devuelve por la pantalla lo que este percibe tras cada movimiento. </p>
+<p [style.fontSize.px]="[ tamano ]">La especificación de los movimientos y de las percepciones se encuentra a continuación:</p>
+
+<ul>
+  <li [style.fontSize.px]="[ tamano ]">Los iconos de girar <i class="fas fa-undo-alt"></i> y <i class="fas fa-redo-alt"></i>, hacen que el cazador vaya girando 90º en la dirección elegida.</li>
+  <li [style.fontSize.px]="[ tamano ]">El icono <i class="fas fa-walking"></i><i class="fas fa-chevron-right"></i>, hace que el cazador avance a la casilla siguiente según la dirección de su flecha.</li>
+  <li [style.fontSize.px]="[ tamano ]">Clicando en la flecha <i class="fas fa-long-arrow-alt-right"></i> se dispara una flecha. Hay tres oportunidades. Sólo se mata al Wumpus, si se dispara desde las celdas adyacentes al Wumpus, y con la flecha apuntando a su casilla.</li>
+</ul>
+
+
+<p [style.fontSize.px]="[ tamano ]">Percepciones (restringidas a la casilla que ocupa): </p>
+
+  <ul>
+    <li [style.fontSize.px]="[ tamano ]">
+1. El cazador percibe si en su casilla se encuentra el wumpus.</li>
+<li [style.fontSize.px]="[ tamano ]">
+2. En los cuadros adyacentes al wumpus, percibe su hedor.</li>
+<li [style.fontSize.px]="[ tamano ]">
+3. En los cuadros adyacentes a un pozo, percibe la brisa.</li>
+<li [style.fontSize.px]="[ tamano ]">
+4. Dónde está el oro percibe su brillo.</li>
+<li [style.fontSize.px]="[ tamano ]">
+5. Si avanza hasta un muro, percibe el choque.</li>
+<li [style.fontSize.px]="[ tamano ]">
+6. Cuando mata al wumpus percibe un grito.</li>
+<li [style.fontSize.px]="[ tamano ]">7. Si se encuentra en la casilla de salida, puede salir del juego</li>
+</ul>

@@ -1,0 +1,256 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+	background-image: var(--colorFondo);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+ padding-bottom: 50px;
+}
+
+hr {
+    border-color: white;
+}
+
+#footer {
+width: 100%;
+ min-height: 40px;
+ margin-top: 20px;
+ padding: 10px;
+ background-color: #cccccc;
+ text-align: center;
+ position:fixed; bottom:0; z-index:999999;
+}
+
+.top_images {
+  width: 100%;
+  max-height: 150px;
+  margin-top: 0;
+}
+
+
+/* GRID */
+
+.g_contenedor {
+	max-width: 1200px;
+	width: 96%;
+  background-color: #eeeeee;
+  text-align: left;
+  padding: 15px;
+  margin: 0 auto;
+}
+.g_contenedor img {
+	width: 100%;
+	display: block;
+	margin-bottom: 2rem;
+}
+.g_tablero {
+  width: 240px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem; */
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  background-color: #ffffff;
+}
+
+.g_tablero_item {
+  border: 1px solid #000000;
+  margin: 0;
+  padding: 3px;
+  width: 60px;
+  height: 60px;
+}
+
+.img11 {
+  background-repeat:no-repeat;
+  background:url(./assets/img/hunt-11.jpg);
+  background-size: cover;
+}
+.img13 {
+  background-repeat:no-repeat;
+  background:url(./assets/img/hunt-13.jpg);
+  background-size: cover;
+}
+.img14 {
+  background-repeat:no-repeat;
+  background:url(./assets/img/hunt-14.jpg);
+  background-size: cover;
+}
+.img21 {
+  background-repeat:no-repeat;
+  background:url(./assets/img/hunt-21.jpg);
+  background-size: cover;
+}
+.img22 {
+  background-repeat:no-repeat;
+  background:url(./assets/img/hunt-22.jpg);
+  background-size: cover;
+}
+.img23 {
+  background-repeat:no-repeat;
+  background:url(./assets/img/hunt-23.jpg);
+  background-size: cover;
+}
+.img24 {
+  background-repeat:no-repeat;
+  background:url(./assets/img/hunt-24.jpg);
+  background-size: cover;
+}
+.img31 {
+  background-repeat:no-repeat;
+  background:url(./assets/img/hunt-31.jpg);
+  background-size: cover;
+}
+.img33 {
+  background-repeat:no-repeat;
+  background:url(./assets/img/hunt-33.jpg);
+  background-size: cover;
+}
+.img41 {
+  background-repeat:no-repeat;
+  background:url(./assets/img/exit.jpg);
+  background-size: cover;
+}
+.img42 {
+  background-repeat:no-repeat;
+  background:url(./assets/img/hunt-42.jpg);
+  background-size: cover;
+}
+.img43 {
+  background-repeat:no-repeat;
+  background:url(./assets/img/hunt-43.jpg);
+  background-size: cover;
+}
+.img44 {
+  background-repeat:no-repeat;
+  background:url(./assets/img/hunt-44.jpg);
+  background-size: cover;
+}
+
+/*
+.producto_promocion_01 {
+	grid-row: 1 / 2;
+	grid-column: 4 / 5;
+
+}
+.producto_promocion_02 {
+	grid-row: 3 / 4;
+	grid-column: 1 / 2;
+}
+
+*/
+
+.mensajes {
+  margin-top: 10px;
+  border: 1px solid #666666;
+  padding: 5px;
+}
+.mensajeLlegada {
+  display: block;
+  width: 96%;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #666666;
+  background-color: #ffffff;
+}
+
+
+/* OLD */
+
+
+
+
+.foto_texto {
+  max-width: 150px;
+  float: left;
+  margin: 8px;
+}
+
+.spotifyBody {
+    background-color: black;
+    color: white !important;
+}
+
+.main-container {
+  margin-top: 20px;
+  }
+
+.img_tarjeta {
+  width: 100%;
+  max-width: 100%;
+  max-height: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.puntero {
+    cursor: pointer;
+}
+
+.img-circle {
+    border-radius: 100%;
+    width: 150px;
+}
+
+.card-title,
+.card-text {
+    color: black;
+}
+
+.badge {
+    margin-left: 5px;
+}
+
+.btn-outline-success {
+    margin-left: 5px;
+}
+
+.img-thumb {
+    width: 50px;
+    height: 50px;
+}
+
+.text_justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* ANIMATED */
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  .fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+/* FIN ANIMATED */
